@@ -1,7 +1,5 @@
 # GWC Shop
 
-Watch shop with a cart and Stripe Checkout (test mode, CAD).
-
 ![GWC shop](docs/screenshot.png)
 
 ## Overview
