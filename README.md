@@ -2,7 +2,7 @@
 
 ![GWC shop](docs/screenshot.png)
 
-## Overview
+## Tech stack
 
 - Frontend: React + TypeScript
 - Backend: Node.js (Checkout session creation)
