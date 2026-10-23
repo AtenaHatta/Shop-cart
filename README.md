@@ -5,10 +5,10 @@
 ## Tech stack
 
 - Frontend: React + TypeScript
-- Backend: Node.js (Checkout session creation)
+- Backend: Node.js
 - Payments: Stripe Checkout
 
-Features: add items, change quantity (0 removes the line), order summary, checkout.
+Features: add items, change quantity, order summary, checkout.
 
 ## Cart
 
@@ -16,7 +16,7 @@ Cart state is shared through `useContext` (`CartProvider` in `src/context/CartCo
 
 ## Checkout
 
-The client sends only `{ id, quantity }`. The server resolves prices from `shared/catalog.ts` and builds the Stripe line items, so prices cannot be changed from the client. Unknown ids and non-positive or non-integer quantities are rejected. `STRIPE_SECRET_KEY` is read from `.env`, which is gitignored.
+The client sends only `{ id, quantity }`. The server resolves prices from `shared/catalog.ts` and builds the Stripe line items, so prices cannot be changed from the client. Unknown ids and non-positive or non-integer quantities are rejected.
 
 ## Performance
 
